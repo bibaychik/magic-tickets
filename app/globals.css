@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+.magic-border {
+  background: linear-gradient(
+    90deg,
+    #06b6d4,
+    #ec4899,
+    #a855f7,
+    #f97316,
+    #06b6d4
+  );
+  background-size: 200% auto;
+  animation: magic-border-shift 4s linear infinite;
+}
+
+@keyframes magic-border-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
